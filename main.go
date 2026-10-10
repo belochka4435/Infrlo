@@ -71,7 +71,7 @@ func handleUpdate(bot *tgbotapi.BotAPI, update tgbotapi.Update) {
 		reply = "Ты написал: " + msg.Text
 	}
 
-	// Отправляем ответ
+	// Отправляем ответоро
 	_, err := bot.Send(tgbotapi.NewMessage(msg.Chat.ID, reply))
 	if err != nil {
 		log.Printf("Ошибка отправки: %v", err)
